@@ -55,3 +55,6 @@ Desktop.ini
 .tern-port
 .vscode-test
 .yarn-integrity
+
+# 排除嵌套示例仓库与其内容
+server-mod-examples/
