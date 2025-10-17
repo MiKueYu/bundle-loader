@@ -1,0 +1,11 @@
+{
+  "name": "DreamoLoader",
+  "version": "1.0.0",
+  "author": "Dreamo",
+  "description": "加载独立物品的mod",
+  "entryPoint": "DreamoLoader.dll",
+  "entryClass": "DreamoLoader.DreamoLoader",
+  "entryMethod": "OnLoad",
+  "isServerMod": true,
+  "sptVersion": "4.0.0"
+}

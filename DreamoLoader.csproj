@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>DreamoLoader</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <Version>1.0.0</Version>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <StaticWebAssetsEnabled>false</StaticWebAssetsEnabled>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SPTarkov.Common" Version="4.0.0" />
+    <PackageReference Include="SPTarkov.DI" Version="4.0.0" />
+    <PackageReference Include="SPTarkov.Reflection" Version="4.0.0" />
+    <PackageReference Include="SPTarkov.Server.Core" Version="4.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SPT.Server">
+      <HintPath>..\spt\SPT-4.0.0-40087-0582f8d\SPT\SPT.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="SPT.Server.Linux">
+      <HintPath>..\spt\SPT-4.0.0-40087-0582f8d\SPT\SPT.Server.Linux.dll</HintPath>
+    </Reference>
+    <Reference Include="SPTarkov.Common">
+      <HintPath>..\spt\SPT-4.0.0-40087-0582f8d\SPT\SPTarkov.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SPTarkov.DI">
+      <HintPath>..\spt\SPT-4.0.0-40087-0582f8d\SPT\SPTarkov.DI.dll</HintPath>
+    </Reference>
+    <Reference Include="SPTarkov.Reflection">
+      <HintPath>..\spt\SPT-4.0.0-40087-0582f8d\SPT\SPTarkov.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="SPTarkov.Server.Assets">
+      <HintPath>..\spt\SPT-4.0.0-40087-0582f8d\SPT\SPTarkov.Server.Assets.dll</HintPath>
+    </Reference>
+    <Reference Include="SPTarkov.Server.Core">
+      <HintPath>..\spt\SPT-4.0.0-40087-0582f8d\SPT\SPTarkov.Server.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SPTarkov.Server.Web">
+      <HintPath>..\spt\SPT-4.0.0-40087-0582f8d\SPT\SPTarkov.Server.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Hashing">
+      <HintPath>..\spt\SPT-4.0.0-40087-0582f8d\SPT\System.IO.Hashing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

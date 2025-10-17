@@ -1,0 +1,11 @@
+{
+  "manifest": [
+    {
+      "key": "mods/tarkov_coin.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "cubemaps"
+      ]
+    }
+  ]
+}
