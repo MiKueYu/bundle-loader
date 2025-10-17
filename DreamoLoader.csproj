@@ -58,13 +58,13 @@
     <!-- 排除 server-mod-examples 目录下的 .cs 文件不参与编译 -->
     <Compile Remove="server-mod-examples\**\*.cs" />
     <!-- 将 bundles.json、bundles 目录与 db 目录复制到输出 -->
-    <None Include="bundles.json">
+    <None Update="bundles.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <Content Include="bundles\**\*">
+    <Content Update="bundles\**\*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="db\**\*">
+    <Content Update="db\**\*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
